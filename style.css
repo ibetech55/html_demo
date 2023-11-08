@@ -1,0 +1,103 @@
+:root {
+    --primary: rgb(71, 0, 0);
+    --text: #fff;
+    --hover: red;
+    --bgColor: #fff;
+}
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: var(--bgColor);
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+    background-color: var(--primary);
+    color: var(--text);
+}
+
+.navbar nav {
+    display: flex;
+    list-style: none;
+    color: var(--text);
+
+}
+
+.navbar nav li {
+    display: flex;
+    list-style: none;
+    padding: 20px;
+    cursor: pointer;
+}
+
+.navbar nav li:hover {
+    display: flex;
+    list-style: none;
+    padding: 20px;
+    cursor: pointer;
+    background-color: var(--hover);
+}
+
+.navbar nav li a {
+    text-decoration: none;
+    color: var(--text);
+}
+
+.info {
+    display: flex;
+    height: 60vh;
+    padding: 30px 100px;
+}
+
+.info .personal-info {
+    width: 50%;
+}
+
+.info .personal-info p {
+    font-weight: bold;
+    line-height: 3.5;
+}
+
+.info .personal-info span {
+    font-weight: normal;
+}
+
+.info .personal-pic {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+}
+
+/* .info .personal-pic .img-div {
+    height: 100%;
+    width: 70%;
+    border-radius: 100%;
+    background-color: gray;
+    background-image: url('kc_abdul.jpeg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+} */
+
+.info .personal-pic img {
+    display: block;
+    height: 100%;
+    width: 70%;
+    border-radius: 100%;
+    background-color: gray;
+    object-fit: fill;
+    /* background-image: url('kc_abdul.jpeg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat; */
+    border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
